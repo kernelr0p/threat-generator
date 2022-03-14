@@ -1,7 +1,16 @@
 # threat-generator
 Threat-Generator allows to build custom tcp payloads to test the configuration of different N-IDS types
 
+# Installation
+```
+sudo go get github.com/google/gofuzz
+sudo go get github.com/google/gopacket
+sudo go get github.com/google/gopacket/layers
+sudo go get github.com/google/gopacket/pcap
 
+go build
+```
+# Usage
 ```
  USAGE: threat-generator [-h] -r pcap [-i iface] [-f flags,options,payload | -c payload] [-d remote] [-p port]
 		Where 'remote' is an ip address or host name.
