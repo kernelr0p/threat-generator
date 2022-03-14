@@ -1,5 +1,5 @@
 # threat-generator
-Threat-Generator allows to build custom tcp payloads to test the configuration of different N-IDS types
+Threat-Generator is a network fuzzer which reads from a pcap and fuzz the content of the TCP flags, options and payload. It facilitated CVE-2021-1224: https://www.cisco.com/c/en/us/support/docs/csa/cisco-sa-snort-tfo-bypass-MmzZrtes.html.
 
 # Installation
 ```
