@@ -12,7 +12,9 @@ go build
 ```
 # Usage
 ```
- USAGE: threat-generator [-h] -r pcap [-i iface] [-f flags,options,payload | -c payload] [-d remote] [-p port]
+USAGE: 
+ 
+threat-generator [-h] -r pcap [-i iface] [-f flags,options,payload | -c payload] [-d remote] [-p port]
 		Where 'remote' is an ip address or host name.
 		-r: Pcap file to decode
 		-i: Interface
@@ -22,6 +24,5 @@ go build
 		-p: Destination port to send n packets
         	-h: Help
 Examples:
-        sudo go run threat-generator.go -r .pcap -c "cat /etc/passwd" -d remote_ip -p 80
-        
+sudo go run threat-generator.go -r .pcap -c "cat /etc/passwd" -d remote_ip -p 80        
 ```
